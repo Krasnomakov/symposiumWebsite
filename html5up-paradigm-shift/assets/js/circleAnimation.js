@@ -2,6 +2,7 @@ window.onload = function() {
     var canvas = document.getElementById('animationCanvas');
     var context = canvas.getContext('2d');
 
+    
     // Set canvas size to fill the window
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -43,6 +44,8 @@ window.onload = function() {
 
         requestAnimationFrame(animate);
     };
+
+    
 
     animate();
 };
