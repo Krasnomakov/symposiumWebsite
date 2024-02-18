@@ -55,7 +55,6 @@ body {
 	height: 70px;
 	margin-left: 2vh;
 	
-	
   }
 
   #countdown {
@@ -65,17 +64,22 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	display: flex;
+	
   }
   
 
  #countdown p {
 	display: inline-block;
 	font-size: 32pt;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;;
+	font-weight: 600;
+	color: #2ee4bb;
+	font-family:"Source Sans Pro", Helvetica, sans-serif;
 	padding: 10px;
-	background-color: white;
-	margin: 10 10px;
-	
+	background-color:#7f46c4;
+	border-radius: 15px;
+	margin: 10px;
+	min-width: 150px;
   }
 
 #animationCanvas {
@@ -143,12 +147,16 @@ input, select, textarea {
 
 		#countdown {
 			margin-left: -5vh;
+			display: flow;
 		} 
 
 		#countdown p {
 			display: auto;
 			font-size: 14pt;
-			
+			min-width: none;
+			max-width: 50px;
+			padding: 5px;
+			margin: 5px;
 		  }
 
 	}
@@ -262,7 +270,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #2ee4bb;
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-weight: 600;
 		letter-spacing: 0.175em;
@@ -2569,7 +2577,7 @@ input, select, textarea {
 			}
 
 			.image.chairman img {
-				width: 50%;
+				width: 40%;
 			}
 
 			.image.committee img {
@@ -2612,6 +2620,7 @@ input, select, textarea {
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
+		color: #2ee4bb;
 	}
 
 		ul li {
@@ -3432,12 +3441,18 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
+				
+
 				#wrapper > section:last-of-type > header:after {
 					left: calc(50vw - 4rem - 0.25rem + 1px);
 				}
 
 				#wrapper .copyright {
 					padding: 0 4rem;
+				}
+
+				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
+					display: none;
 				}
 
 		}
@@ -3611,6 +3626,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			
 
 			#wrapper section {
 				margin: 3rem 0 0 0;
