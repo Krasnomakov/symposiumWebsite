@@ -2584,6 +2584,10 @@ input, select, textarea {
 				width: 40%;
 			}
 
+			.image.speaker img {
+				width: 20vh;
+			}
+
 			.image.main:first-child {
 				margin-top: 0;
 			}
